@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = 'PROJECT-ID'
+        PROJECT_ID = 'oceanic-archery-319804'
         CLUSTER_NAME = 'CLUSTER-NAME'
         LOCATION = 'CLUSTER-LOCATION'
         CREDENTIALS_ID = 'gke'
@@ -15,7 +15,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("DOCKER-HUB-USERNAME/hello:${env.BUILD_ID}")
+                    myapp = docker.build("sumitchandnani/hello:${env.BUILD_ID}")
                 }
             }
         }
