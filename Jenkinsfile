@@ -2,9 +2,9 @@ pipeline {
     agent any
     environment {
         PROJECT_ID = 'oceanic-archery-319804'
-        CLUSTER_NAME = 'CLUSTER-NAME'
-        LOCATION = 'CLUSTER-LOCATION'
-        CREDENTIALS_ID = 'gke'
+        CLUSTER_NAME = 'otocapital'
+        LOCATION = 'us-central1-c'
+        CREDENTIALS_ID = 'OTOCapital'
     }
     stages {
         stage("Checkout code") {
